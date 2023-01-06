@@ -11,25 +11,25 @@
 <div class="header"><p class="header-text">JS Cash Register</p></div>
 <section id="main">
 <div class="b-n">
-  <form action="">
+  <form action="" id="clientform">
   <p> <b> Client Info:</b></p>
-  <label>BILL:</label><span>$</span><input type="number" placeholder="Input User's Total Bill" required name="bill"><br>
-  <label>NOTE:</label><span>$</span><input type="number" placeholder="Input User's Note" required  name="note"><br>
+  <label>BILL:</label><span>$</span><input type="text" placeholder="Input User's Total Bill" required name="bill"><br>
+  <label>NOTE:</label><span>$</span><input type="text" placeholder="Input User's Note" required  name="note"><br>
   <button type="submit">CHECK USER BL</button><span>$</span><span class="balance">-</span>
 </form>
 </div>
 <div class="cashregister">
   <p> <b> Cash Register: </b></p>
-  <form action="">
-  <label>PENNY:</label><input type="number" placeholder="" name="penny"><br>
-  <label>NICKEL:</label><input type="number" placeholder="" name="nickel"><br>
-  <label>DIME:</label><input type="number" placeholder="" name="dime"><br>
-  <label>QUARTER:</label><input type="number" placeholder="" name="quarter"><br>
-  <label>ONE:</label><input type="number" placeholder="" name="one"><br>
-  <label>FIVE:</label><input type="number" placeholder="" name="five"><br>
-  <label>TEN:</label><input type="number" placeholder="" name="ten"><br>
-  <label>TWENTY:</label><input type="number" placeholder="" name="twenty"><br>
-  <label>1HUNDRED:</label><input type="number" placeholder="" name="1hundred">
+  <form action="" id="cashregisterform">
+  <label>PENNY:</label><input type="text" placeholder="" name="penny"><br>
+  <label>NICKEL:</label><input type="text" placeholder="" name="nickel"><br>
+  <label>DIME:</label><input type="text" placeholder="" name="dime"><br>
+  <label>QUARTER:</label><input type="text" placeholder="" name="quarter"><br>
+  <label>ONE:</label><input type="text" placeholder="" name="one"><br>
+  <label>FIVE:</label><input type="text" placeholder="" name="five"><br>
+  <label>TEN:</label><input type="text" placeholder="" name="ten"><br>
+  <label>TWENTY:</label><input type="text" placeholder="" name="twenty"><br>
+  <label>1HUNDRED:</label><input type="text" placeholder="" name="onehundred">
   <button type="submit" style="margin-left: 140px;">Calculate</button>
 </form>
 </div>
@@ -38,4 +38,5 @@
   <p>Client Recieves: <span class="return" id="return"></span></p>
 </div>
 </body>
+<script src="assets/scripts/script.js"></script>
 </html>
