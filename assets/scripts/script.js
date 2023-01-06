@@ -28,6 +28,7 @@ cashRegisterForm.addEventListener("submit", (a) => {
   let twenty = a.target.twenty.value;
   let oneHundred = a.target.onehundred.value;
  let cid = [["PENNY", penny], ["NICKEL", nickel], ["DIME", dime], ["QUARTER", quarter], ["ONE", one], ["FIVE", five], ["TEN", ten], ["TWENTY", twenty], ["ONE HUNDRED", oneHundred]];
+ console.log(cid)
 function checkCashRegister(price, cash, cid) {
   var difference = cash - price;
   const originalDiff = difference;
@@ -87,9 +88,11 @@ let arrCurrency = [
 
   if(cidSum < originalDiff || sumResult < originalDiff){
     objectReturn.status = 'INSUFFICIENT_FUNDS';
-    }else if(cidSum == originalDiff){
+    returnDisplay.textContent = objectReturn.status + " " + objectReturn.change; 
+  }else if(cidSum == originalDiff){
       objectReturn.status = 'CLOSED';
       objectReturn.change = cid
+      returnDisplay.textContent = objectReturn.status + " " + objectReturn.change + " Dollars";
     }else{
       let resultFiltered =[];
       for(let a = 0; a<result.length; a++){
@@ -99,6 +102,7 @@ let arrCurrency = [
         }
      objectReturn.status = 'OPEN';
      objectReturn.change = resultFiltered;
+     returnDisplay.textContent = objectReturn.status + " " + objectReturn.change + " Dollars";
     }
      returnDisplay.textContent = objectReturn.status + " " + objectReturn.change + " Dollars";
 }
