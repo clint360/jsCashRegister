@@ -12,30 +12,30 @@
 <section id="main">
 <div class="b-n">
   <form action="">
-  <p> <b> User Info:</b></p>
-  <label>BILL:</label><span>$</span><input type="number" placeholder="Input User's Total Bill" required><br>
-  <label>NOTE:</label><span>$</span><input type="number" placeholder="Input User's Note" required><br>
+  <p> <b> Client Info:</b></p>
+  <label>BILL:</label><span>$</span><input type="number" placeholder="Input User's Total Bill" required name="bill"><br>
+  <label>NOTE:</label><span>$</span><input type="number" placeholder="Input User's Note" required  name="note"><br>
   <button type="submit">CHECK USER BL</button><span>$</span><span class="balance">-</span>
 </form>
 </div>
 <div class="cashregister">
   <p> <b> Cash Register: </b></p>
   <form action="">
-  <label>PENNY:</label><input type="number" placeholder=""><br>
-  <label>NICKEL:</label><input type="number" placeholder=""><br>
-  <label>DIME:</label><input type="number" placeholder=""><br>
-  <label>QUARTER:</label><input type="number" placeholder=""><br>
-  <label>ONE:</label><input type="number" placeholder=""><br>
-  <label>FIVE:</label><input type="number" placeholder=""><br>
-  <label>TEN:</label><input type="number" placeholder=""><br>
-  <label>TWENTY:</label><input type="number" placeholder=""><br>
-  <label>1HUNDRED:</label><input type="number" placeholder="">
+  <label>PENNY:</label><input type="number" placeholder="" name="penny"><br>
+  <label>NICKEL:</label><input type="number" placeholder="" name="nickel"><br>
+  <label>DIME:</label><input type="number" placeholder="" name="dime"><br>
+  <label>QUARTER:</label><input type="number" placeholder="" name="quarter"><br>
+  <label>ONE:</label><input type="number" placeholder="" name="one"><br>
+  <label>FIVE:</label><input type="number" placeholder="" name="five"><br>
+  <label>TEN:</label><input type="number" placeholder="" name="ten"><br>
+  <label>TWENTY:</label><input type="number" placeholder="" name="twenty"><br>
+  <label>1HUNDRED:</label><input type="number" placeholder="" name="1hundred">
   <button type="submit" style="margin-left: 140px;">Calculate</button>
 </form>
 </div>
 </section>
 <div class="return">
-  <p>Return:</p>
+  <p>Client Recieves: <span class="return" id="return"></span></p>
 </div>
 </body>
 </html>
