@@ -18,15 +18,15 @@ console.log(balance);
 
 cashRegisterForm.addEventListener("submit", (a) => {
   a.preventDefault();
-  let penny = a.target.penny.value;
-  let nickel = a.target.nickel.value;
-  let dime = a.target.dime.value;
-  let quarter = a.target.quarter.value;
-  let one = a.target.one.value;
-  let five = a.target.five.value;
-  let ten = a.target.ten.value;
-  let twenty = a.target.twenty.value;
-  let oneHundred = a.target.onehundred.value;
+  let penny = parseFloat(a.target.penny.value);
+  let nickel = parseFloat(a.target.nickel.value);
+  let dime = parseFloat(a.target.dime.value);
+  let quarter = parseFloat(a.target.quarter.value);
+  let one = parseFloat(a.target.one.value);
+  let five = parseFloat(a.target.five.value);
+  let ten = parseFloat(a.target.ten.value);
+  let twenty = parseFloat(a.target.twenty.value);
+  let oneHundred = parseFloat(a.target.onehundred.value);
  let cid = [["PENNY", penny], ["NICKEL", nickel], ["DIME", dime], ["QUARTER", quarter], ["ONE", one], ["FIVE", five], ["TEN", ten], ["TWENTY", twenty], ["ONE HUNDRED", oneHundred]];
  console.log(cid)
 function checkCashRegister(price, cash, cid) {
@@ -87,12 +87,10 @@ let arrCurrency = [
   sumResult = sumResult.toFixed(2);
 
   if(cidSum < originalDiff || sumResult < originalDiff){
-    objectReturn.status = 'INSUFFICIENT_FUNDS';
-    returnDisplay.textContent = objectReturn.status + " " + objectReturn.change; 
+    objectReturn.status = 'INSUFFICIENT_FUNDS'; 
   }else if(cidSum == originalDiff){
       objectReturn.status = 'CLOSED';
-      objectReturn.change = cid
-      returnDisplay.textContent = objectReturn.status + " " + objectReturn.change + " Dollars";
+      objectReturn.change = cid;
     }else{
       let resultFiltered =[];
       for(let a = 0; a<result.length; a++){
@@ -102,7 +100,6 @@ let arrCurrency = [
         }
      objectReturn.status = 'OPEN';
      objectReturn.change = resultFiltered;
-     returnDisplay.textContent = objectReturn.status + " " + objectReturn.change + " Dollars";
     }
      returnDisplay.textContent = objectReturn.status + " " + objectReturn.change + " Dollars";
 }
