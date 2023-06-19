@@ -15,7 +15,11 @@
   <p> <b> Client Info:</b></p>
   <label>BILL:</label><span>$</span><input type="text" placeholder="Input User's Total Bill" required name="bill"><br>
   <label>NOTE:</label><span>$</span><input type="text" placeholder="Input User's Note" required  name="note"><br>
-  <button type="submit">CHECK USER BL</button><span>$</span><span class="balance">-</span>
+  <div style="text-align: center;"><button type="submit">Ok</button></div>
+  <br>
+  <label>Balance:</label>
+  <span>$</span>
+  <span class="balance">-</span>
 </form>
 </div>
 <div class="cashregister">
@@ -30,14 +34,14 @@
   <label>TEN:</label><input type="text" placeholder="" name="ten"><br>
   <label>TWENTY:</label><input type="text" placeholder="" name="twenty"><br>
   <label>1HUNDRED:</label><input type="text" placeholder="" name="onehundred">
-  <button type="submit" style="margin-left: 140px;">Calculate</button>
+  <button class="calculatebutton" type="submit" style="margin-left: 140px;">Calculate</button>
 </form>
 </div>
 </section>
 <div class="return">
   <p>OUTPUT STATUS: <span class="return" id="return"></span></p>
 </div>
-<div class="footer" style="text-align: center; margin: auto; width: 500px; padding-top: 80px; color: white;">End of Javascript course project by @clint360</div>
+<div class="footer" style="position: absolute; bottom: 5px; width: 100%; text-align: center;  padding-top: 80px; color: white;">End of Javascript course project by @clint360</div>
 </body>
 <script src="assets/scripts/script.js"></script>
 </html>
