@@ -1,0 +1,108 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: radial-gradient(rgb(146, 130, 130), rgb(5, 0, 0));
+  height: 100vh;
+}
+
+#main {
+  display: flex;
+  flex-direction: row-reverse;
+  background: rgb(135, 106, 201);
+  border-radius: 12px;
+  font-weight: 500;
+  width: 50%;
+  min-width: 650px;
+  margin: auto;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.balance {
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  padding: 0 58px;
+}
+
+.cashregister {
+  padding: 10px;
+  flex-basis: 80%;
+}
+
+.header {
+  margin: auto;
+  width: 200px;
+  font-size: 25px;
+  color: #fff;
+}
+
+label {
+  width: 80px;
+  padding:0 20px;
+  display: inline-block;
+}
+
+input {
+  padding: 3px 10px;
+  display: inline-block;
+  width: 100px;
+  margin: 2px;
+}
+
+.b-n {
+  flex-basis: 80%;
+  line-height: 30px;
+}
+
+.b-n input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: -10px;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.b-n input::placeholder {
+  color: red;
+}
+
+.return {
+  background: rgb(0, 0, 0);
+  min-width: 400px;
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: -25px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.return p {
+  padding: 20px;
+}
+
+button {
+padding: 5px;
+border-radius: 5px;
+border: 1px solid black;
+background: blue;
+color: #fff;
+}
+
+#cashregisterform input {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.calculatebutton {
+  position: absolute;
+  margin: -40px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+}
